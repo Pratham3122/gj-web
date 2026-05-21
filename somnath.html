@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somnath — Gujarat Adventure 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>:root { --dest-accent: #3a78b0; --dest-glow: rgba(58,120,176,0.4); --dest-text: #88c0e8; }</style>
+</head>
+<body class="dest-page">
+  <div id="progress-bar"></div>
+  <div id="cinematic-overlay"><div class="cinematic-bar top"></div><div class="cinematic-bar bottom"></div><div class="cinematic-text"></div></div>
+  <div id="lightbox"><button id="lightbox-close" title="Close">✕</button><img src="" alt="Lightbox Image"></div>
+
+  <nav id="nav">
+    <a class="nav-logo" href="index.html">Gujarat 2025</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">← Back</a>
+      <a href="index.html#overview" class="nav-link">Overview</a>
+      <a href="index.html#budget" class="nav-link">Budget</a>
+    </div>
+    <div class="nav-dest-links">
+      <a href="junagadh.html" class="nav-dest-pill">⛰️ Junagadh</a>
+      <a href="gir.html" class="nav-dest-pill">🦁 Gir</a>
+      <a href="somnath.html" class="nav-dest-pill active">🌊 Somnath</a>
+      <a href="palitana.html" class="nav-dest-pill">🏛️ Palitana</a>
+      <a href="ahmedabad.html" class="nav-dest-pill">🏙️ Ahmedabad</a>
+      <a href="ekta-nagar.html" class="nav-dest-pill">🗿 Ekta Nagar</a>
+    </div>
+    <button class="nav-menu-btn" id="nav-menu-btn">☰</button>
+  </nav>
+  <div id="mobile-menu">
+    <button id="mobile-close">✕</button>
+    <a href="index.html" class="mob-link">🏠 Home</a>
+    <div class="mob-divider">— Destinations —</div>
+    <a href="junagadh.html" class="mob-link">⛰️ Junagadh</a>
+    <a href="gir.html" class="mob-link">🦁 Gir Forest</a>
+    <a href="somnath.html" class="mob-link">🌊 Somnath</a>
+    <a href="palitana.html" class="mob-link">🏛️ Palitana</a>
+    <a href="ahmedabad.html" class="mob-link">🏙️ Ahmedabad</a>
+    <a href="ekta-nagar.html" class="mob-link">🗿 Ekta Nagar</a>
+  </div>
+
+  <section class="dest-hero">
+    <div class="dest-hero-bg" style="background-image:url('images/somnath-temple.png')"></div>
+    <div class="dest-hero-overlay"></div>
+    <div class="dest-hero-grain"></div>
+    <div class="dest-hero-content">
+      <div class="dest-chapter">Chapter 3 of 6</div>
+      <p class="dest-days">Day 3 · Thu, 18 June 2025</p>
+      <h1 class="dest-title">Somnath</h1>
+      <p class="dest-subtitle">Where the Ocean Meets the Divine</p>
+      <div class="dest-hero-tags">
+        <span class="dest-tag-pill">🕌 Jyotirlinga Temple</span>
+        <span class="dest-tag-pill">🙏 Noon Aarti</span>
+        <span class="dest-tag-pill">🌊 Arabian Sea</span>
+      </div>
+    </div>
+    <div class="dest-scroll-hint"><div class="dest-scroll-line"></div><span>Scroll</span></div>
+  </section>
+
+  <div class="dest-body">
+    <div class="dest-main">
+      <div class="dest-description scroll-reveal">
+        <p>One of the twelve sacred Jyotirlingas, the Somnath Temple stands defiant at the edge of the Arabian Sea. The sound of waves crashing against its ancient stones, the smell of incense, the noon aarti — utterly transcendent.</p>
+      </div>
+      <div class="dest-activities scroll-reveal">
+        <h3 class="dest-section-title">Day Itinerary</h3>
+        <div class="activity-list">
+          <div class="activity-item"><span class="act-time">12:00 PM</span><span class="act-icon">🕌</span><span class="act-name">Arrive & Visit Somnath Temple</span></div>
+          <div class="activity-item"><span class="act-time">12:30 PM</span><span class="act-icon">🙏</span><span class="act-name">Attend Noon Aarti at the Temple</span></div>
+          <div class="activity-item"><span class="act-time">1:30 PM</span><span class="act-icon">🚗</span><span class="act-name">Depart for Palitana</span></div>
+        </div>
+      </div>
+      <div class="dest-note scroll-reveal">
+        <span class="note-icon">📌</span>
+        One of 12 Jyotirlingas · Attend noon aarti if possible · No photography inside
+      </div>
+      <div class="dest-photos scroll-reveal">
+        <h3 class="dest-section-title">Photos</h3>
+        <div class="dest-photo-grid">
+          <div class="dest-photo-cell" onclick="openLightbox('images/somnath-temple.png')">
+            <img src="images/somnath-temple.png" alt="Somnath Temple" loading="lazy" onerror="this.parentElement.classList.add('img-error')">
+            <div class="photo-label">Somnath Temple</div>
+          </div>
+          <div class="dest-photo-cell" onclick="openLightbox('images/somnath-exterior.png')">
+            <img src="images/somnath-exterior.png" alt="Temple Exterior" loading="lazy" onerror="this.parentElement.classList.add('img-error')">
+            <div class="photo-label">Temple Exterior</div>
+          </div>
+          <div class="dest-photo-cell" onclick="openLightbox('images/somnath-corridors.png')">
+            <img src="images/somnath-corridors.png" alt="Sacred Corridors" loading="lazy" onerror="this.parentElement.classList.add('img-error')">
+            <div class="photo-label">Sacred Corridors</div>
+          </div>
+          <div class="dest-photo-cell" onclick="openLightbox('images/somnath-jyotirlinga.png')">
+            <img src="images/somnath-jyotirlinga.png" alt="Jyotirlinga" loading="lazy" onerror="this.parentElement.classList.add('img-error')">
+            <div class="photo-label">Jyotirlinga</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dest-nav-footer">
+      <a href="gir.html" class="btn-ghost">← Gir Forest</a>
+      <div class="dest-progress-info">Chapter 3 of 6</div>
+      <a href="palitana.html" class="btn-primary">🏛️ Next: Palitana →</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

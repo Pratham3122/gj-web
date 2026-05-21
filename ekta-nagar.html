@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ekta Nagar — Gujarat Adventure 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>:root { --dest-accent: #3a90c0; --dest-glow: rgba(58,144,192,0.4); --dest-text: #80c8f0; }</style>
+</head>
+<body class="dest-page">
+  <div id="progress-bar"></div>
+  <div id="cinematic-overlay"><div class="cinematic-bar top"></div><div class="cinematic-bar bottom"></div><div class="cinematic-text"></div></div>
+  <div id="lightbox"><button id="lightbox-close" title="Close">✕</button><img src="" alt="Lightbox Image"></div>
+
+  <nav id="nav">
+    <a class="nav-logo" href="index.html">Gujarat 2025</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">← Back</a>
+      <a href="index.html#overview" class="nav-link">Overview</a>
+      <a href="index.html#budget" class="nav-link">Budget</a>
+    </div>
+    <div class="nav-dest-links">
+      <a href="junagadh.html" class="nav-dest-pill">⛰️ Junagadh</a>
+      <a href="gir.html" class="nav-dest-pill">🦁 Gir</a>
+      <a href="somnath.html" class="nav-dest-pill">🌊 Somnath</a>
+      <a href="palitana.html" class="nav-dest-pill">🏛️ Palitana</a>
+      <a href="ahmedabad.html" class="nav-dest-pill">🏙️ Ahmedabad</a>
+      <a href="ekta-nagar.html" class="nav-dest-pill active">🗿 Ekta Nagar</a>
+    </div>
+    <button class="nav-menu-btn" id="nav-menu-btn">☰</button>
+  </nav>
+  <div id="mobile-menu">
+    <button id="mobile-close">✕</button>
+    <a href="index.html" class="mob-link">🏠 Home</a>
+    <div class="mob-divider">— Destinations —</div>
+    <a href="junagadh.html" class="mob-link">⛰️ Junagadh</a>
+    <a href="gir.html" class="mob-link">🦁 Gir Forest</a>
+    <a href="somnath.html" class="mob-link">🌊 Somnath</a>
+    <a href="palitana.html" class="mob-link">🏛️ Palitana</a>
+    <a href="ahmedabad.html" class="mob-link">🏙️ Ahmedabad</a>
+    <a href="ekta-nagar.html" class="mob-link">🗿 Ekta Nagar</a>
+  </div>
+
+  <section class="dest-hero">
+    <div class="dest-hero-bg" style="background-image:url('images/ekta-statue.png')"></div>
+    <div class="dest-hero-overlay"></div>
+    <div class="dest-hero-grain"></div>
+    <div class="dest-hero-content">
+      <div class="dest-chapter">Chapter 6 of 6 — Grand Finale</div>
+      <p class="dest-days">Day 8 · Tue, 23 June 2025</p>
+      <h1 class="dest-title">Ekta Nagar</h1>
+      <p class="dest-subtitle">Standing Tall at 182 Metres</p>
+      <div class="dest-hero-tags">
+        <span class="dest-tag-pill">🗿 World's Tallest Statue</span>
+        <span class="dest-tag-pill">🌸 Valley of Flowers</span>
+        <span class="dest-tag-pill">🌊 Sardar Sarovar Dam</span>
+      </div>
+    </div>
+    <div class="dest-scroll-hint"><div class="dest-scroll-line"></div><span>Scroll</span></div>
+  </section>
+
+  <div class="dest-body">
+    <div class="dest-main">
+      <div class="dest-description scroll-reveal">
+        <p>The Statue of Unity — the world's tallest statue — rises from the Narmada valley in breathtaking majesty. Surrounded by the Valley of Flowers and the vast Sardar Sarovar Dam, this is the grand finale of our Gujarat chapter.</p>
+      </div>
+      <div class="dest-activities scroll-reveal">
+        <h3 class="dest-section-title">Day Itinerary</h3>
+        <div class="activity-list">
+          <div class="activity-item"><span class="act-time">7:55 AM</span><span class="act-icon">🚂</span><span class="act-name">Train: Ahmedabad → Ekta Nagar (20947)</span></div>
+          <div class="activity-item"><span class="act-time">12:30 PM</span><span class="act-icon">🗿</span><span class="act-name">Statue of Unity & Valley of Flowers</span></div>
+          <div class="activity-item"><span class="act-time">5:00 PM</span><span class="act-icon">🌸</span><span class="act-name">Valley of Flowers & Jungle Safari Zone</span></div>
+          <div class="activity-item"><span class="act-time">9:28 PM</span><span class="act-icon">🚂</span><span class="act-name">Board 12928 Express → Dadar (Home!)</span></div>
+        </div>
+      </div>
+      <div class="dest-note scroll-reveal">
+        <span class="note-icon">📌</span>
+        World's tallest statue at 182m · Book SoU entry tickets online · Carry IDs
+      </div>
+      <div class="dest-photos scroll-reveal">
+        <h3 class="dest-section-title">Photos</h3>
+        <div class="dest-photo-grid">
+          <div class="dest-photo-cell" onclick="openLightbox('images/ekta-statue.png')">
+            <img src="images/ekta-statue.png" alt="Statue of Unity" loading="lazy" onerror="this.parentElement.classList.add('img-error')">
+            <div class="photo-label">Statue of Unity</div>
+          </div>
+          <div class="dest-photo-cell" onclick="openLightbox('images/ekta-valley.png')">
+            <img src="images/ekta-valley.png" alt="Valley of Flowers" loading="lazy" onerror="this.parentElement.classList.add('img-error')">
+            <div class="photo-label">Valley of Flowers</div>
+          </div>
+          <div class="dest-photo-cell" onclick="openLightbox('images/ekta-dam.png')">
+            <img src="images/ekta-dam.png" alt="Sardar Sarovar Dam" loading="lazy" onerror="this.parentElement.classList.add('img-error')">
+            <div class="photo-label">Sardar Sarovar Dam</div>
+          </div>
+          <div class="dest-photo-cell" onclick="openLightbox('images/ekta-night.png')">
+            <img src="images/ekta-night.png" alt="Night Illumination" loading="lazy" onerror="this.parentElement.classList.add('img-error')">
+            <div class="photo-label">Night Illumination</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Journey Complete Card -->
+      <div class="journey-complete scroll-reveal">
+        <div class="jc-icon">🎉</div>
+        <h3>Journey Complete!</h3>
+        <p>From Mumbai's Bandra to Dadar — via 7 incredible destinations, 2 epic treks, 1 jungle safari, and countless memories. Gujarat, you stole our hearts.</p>
+        <a href="index.html" class="btn-primary">↺ Relive the Journey</a>
+      </div>
+    </div>
+    <div class="dest-nav-footer">
+      <a href="ahmedabad.html" class="btn-ghost">← Ahmedabad</a>
+      <div class="dest-progress-info">Chapter 6 of 6</div>
+      <a href="index.html" class="btn-primary">🏠 Back to Start</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

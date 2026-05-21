@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gujarat Adventure 2025 ✈</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Cinematic Overlay -->
+  <div id="cinematic-overlay">
+    <div class="cinematic-bar top"></div>
+    <div class="cinematic-bar bottom"></div>
+    <div class="cinematic-text"></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <button id="lightbox-close" title="Close">✕</button>
+    <img src="" alt="Lightbox Image">
+  </div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <a class="nav-logo" href="index.html">Gujarat 2025</a>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#overview" class="nav-link">Overview</a>
+      <a href="#timeline" class="nav-link">Timeline</a>
+      <a href="#budget" class="nav-link">Budget</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+    </div>
+    <div class="nav-dest-links">
+      <a href="junagadh.html" class="nav-dest-pill">⛰️ Junagadh</a>
+      <a href="gir.html" class="nav-dest-pill">🦁 Gir</a>
+      <a href="somnath.html" class="nav-dest-pill">🌊 Somnath</a>
+      <a href="palitana.html" class="nav-dest-pill">🏛️ Palitana</a>
+      <a href="ahmedabad.html" class="nav-dest-pill">🏙️ Ahmedabad</a>
+      <a href="ekta-nagar.html" class="nav-dest-pill">🗿 Ekta Nagar</a>
+    </div>
+    <button class="nav-menu-btn" id="nav-menu-btn">☰</button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <button id="mobile-close">✕</button>
+    <a href="#hero" class="mob-link">🏠 Home</a>
+    <a href="#overview" class="mob-link">🗺️ Overview</a>
+    <a href="#timeline" class="mob-link">📅 Timeline</a>
+    <a href="#budget" class="mob-link">💰 Budget</a>
+    <a href="#gallery" class="mob-link">📸 Gallery</a>
+    <div class="mob-divider">— Destinations —</div>
+    <a href="junagadh.html" class="mob-link">⛰️ Junagadh</a>
+    <a href="gir.html" class="mob-link">🦁 Gir Forest</a>
+    <a href="somnath.html" class="mob-link">🌊 Somnath</a>
+    <a href="palitana.html" class="mob-link">🏛️ Palitana</a>
+    <a href="ahmedabad.html" class="mob-link">🏙️ Ahmedabad</a>
+    <a href="ekta-nagar.html" class="mob-link">🗿 Ekta Nagar</a>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <div class="hero-slideshow" id="hero-slideshow"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">✈ An Immersive Journey · June 2025</p>
+      <h1 class="hero-title">
+        <span class="hero-title-main">Gujarat</span>
+        <span class="hero-title-sub">Adventure</span>
+        <span class="hero-title-year">2025</span>
+      </h1>
+      <p class="hero-route">
+        Mumbai <span class="arr">→</span> Junagadh <span class="arr">→</span> Gir
+        <span class="arr">→</span> Somnath <span class="arr">→</span> Palitana
+        <span class="arr">→</span> Ahmedabad <span class="arr">→</span> Ekta Nagar
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="hero-stat-num" id="c-days">0</span><span class="hero-stat-label">Days</span></div>
+        <div class="hero-stat"><span class="hero-stat-num" id="c-cities">0</span><span class="hero-stat-label">Destinations</span></div>
+        <div class="hero-stat"><span class="hero-stat-num" id="c-km">0</span><span class="hero-stat-label">KM+</span></div>
+        <div class="hero-stat"><span class="hero-stat-num">₹<span id="c-budget">0</span></span><span class="hero-stat-label">Per Person</span></div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#overview" class="btn-primary">Explore the Journey →</a>
+        <a href="junagadh.html" class="btn-ghost">Start at Junagadh</a>
+      </div>
+    </div>
+
+    <a href="#overview" class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </a>
+  </section>
+
+
+  <!-- ══ OVERVIEW ══ -->
+  <section id="overview" class="page-section">
+    <div class="section-inner">
+      <div class="section-header scroll-reveal">
+        <p class="eyebrow">16 June – 24 June 2025 · Group of 3</p>
+        <h2 class="section-title">The Journey at a Glance</h2>
+      </div>
+
+      <div class="overview-cards scroll-reveal-stagger">
+        <div class="ov-card"><span class="ov-icon">📅</span><span class="ov-num">9</span><span class="ov-label">Total Days</span></div>
+        <div class="ov-card"><span class="ov-icon">🏙️</span><span class="ov-num">7</span><span class="ov-label">Cities</span></div>
+        <div class="ov-card"><span class="ov-icon">⛰️</span><span class="ov-num">2</span><span class="ov-label">Major Treks</span></div>
+        <div class="ov-card"><span class="ov-icon">🦁</span><span class="ov-num">1</span><span class="ov-label">Safari</span></div>
+        <div class="ov-card"><span class="ov-icon">🚆</span><span class="ov-num">4</span><span class="ov-label">Train Rides</span></div>
+        <div class="ov-card"><span class="ov-icon">💰</span><span class="ov-num">₹10.5k</span><span class="ov-label">Per Person</span></div>
+      </div>
+
+      <div class="overview-highlights scroll-reveal-stagger">
+        <div class="highlight-card">
+          <p class="highlight-label">🏔️ Major Treks</p>
+          <p class="highlight-text"><strong>Girnar Trek</strong> — Neminath Temple (~9,999 steps)<br><strong>Palitana Trek</strong> — Shatrunjaya Hills (~3,800 steps · 900+ Jain temples)</p>
+        </div>
+        <div class="highlight-card">
+          <p class="highlight-label">🗿 Attractions</p>
+          <p class="highlight-text">Statue of Unity · Somnath Temple · Manek Chowk · Valley of Flowers · Sabarmati Riverfront · Adalaj Stepwell</p>
+        </div>
+        <div class="highlight-card">
+          <p class="highlight-label">🏨 Accommodation</p>
+          <p class="highlight-text">Train (D1) · Dharamshala Junagadh (D2) · Dharamshala Palitana (D3–D4) · Dharamshala Ahmedabad (D5–D7) · Train (D8)</p>
+        </div>
+      </div>
+
+      <!-- Destination Cards -->
+      <div class="section-header scroll-reveal" style="margin-top:5rem;">
+        <p class="eyebrow">Choose Your Destination</p>
+        <h2 class="section-title">Explore Each Place</h2>
+      </div>
+
+      <div class="dest-grid scroll-reveal-stagger">
+        <a href="junagadh.html" class="dest-grid-card" style="--accent:#5a8a3a">
+          <div class="dest-grid-img" style="background-image:url('images/junagadh-girnar.png')"></div>
+          <div class="dest-grid-info">
+            <span class="dest-grid-emoji">⛰️</span>
+            <h3>Junagadh</h3>
+            <p>Day 2 · Girnar Trek · 9,999 Steps</p>
+            <span class="dest-grid-arrow">→</span>
+          </div>
+        </a>
+        <a href="gir.html" class="dest-grid-card" style="--accent:#3a7a2a">
+          <div class="dest-grid-img" style="background-image:url('images/gir-lion.png')"></div>
+          <div class="dest-grid-info">
+            <span class="dest-grid-emoji">🦁</span>
+            <h3>Gir Forest</h3>
+            <p>Day 3 · Jungle Safari · Asiatic Lions</p>
+            <span class="dest-grid-arrow">→</span>
+          </div>
+        </a>
+        <a href="somnath.html" class="dest-grid-card" style="--accent:#3a78b0">
+          <div class="dest-grid-img" style="background-image:url('images/somnath-temple.png')"></div>
+          <div class="dest-grid-info">
+            <span class="dest-grid-emoji">🌊</span>
+            <h3>Somnath</h3>
+            <p>Day 3 · Jyotirlinga Temple · Noon Aarti</p>
+            <span class="dest-grid-arrow">→</span>
+          </div>
+        </a>
+        <a href="palitana.html" class="dest-grid-card" style="--accent:#c8a040">
+          <div class="dest-grid-img" style="background-image:url('images/palitana-temples.png')"></div>
+          <div class="dest-grid-info">
+            <span class="dest-grid-emoji">🏛️</span>
+            <h3>Palitana</h3>
+            <p>Days 3–5 · 900+ Jain Temples · 3,800 Steps</p>
+            <span class="dest-grid-arrow">→</span>
+          </div>
+        </a>
+        <a href="ahmedabad.html" class="dest-grid-card" style="--accent:#b04070">
+          <div class="dest-grid-img" style="background-image:url('images/ahmedabad-adalaj.png')"></div>
+          <div class="dest-grid-info">
+            <span class="dest-grid-emoji">🏙️</span>
+            <h3>Ahmedabad</h3>
+            <p>Days 5–7 · UNESCO Heritage City</p>
+            <span class="dest-grid-arrow">→</span>
+          </div>
+        </a>
+        <a href="ekta-nagar.html" class="dest-grid-card" style="--accent:#3a90c0">
+          <div class="dest-grid-img" style="background-image:url('images/ekta-statue.png')"></div>
+          <div class="dest-grid-info">
+            <span class="dest-grid-emoji">🗿</span>
+            <h3>Ekta Nagar</h3>
+            <p>Day 8 · Statue of Unity · 182m</p>
+            <span class="dest-grid-arrow">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ TIMELINE ══ -->
+  <section id="timeline" class="page-section dark-section">
+    <div class="section-inner">
+      <div class="section-header scroll-reveal">
+        <p class="eyebrow">Day by Day</p>
+        <h2 class="section-title">Journey Timeline</h2>
+      </div>
+      <div class="timeline-wrap" id="timeline-wrap"></div>
+    </div>
+  </section>
+
+
+  <!-- ══ TRAINS ══ -->
+  <section id="trains" class="page-section">
+    <div class="section-inner">
+      <div class="section-header scroll-reveal">
+        <p class="eyebrow">🚆 Railway Routes</p>
+        <h2 class="section-title">Train Journeys</h2>
+        <p class="section-sub">Four trains. Thousands of kilometres. Countless memories.</p>
+      </div>
+      <div class="train-grid" id="train-grid"></div>
+      <div class="train-total scroll-reveal">
+        <div class="train-total-item"><div class="tt-label">Total Group Cost</div><div class="tt-num">₹3,765</div></div>
+        <div class="train-total-divider"></div>
+        <div class="train-total-item"><div class="tt-label">Per Person</div><div class="tt-num">₹1,255</div></div>
+        <div class="train-total-divider"></div>
+        <div class="train-total-item"><div class="tt-label">Trains Booked</div><div class="tt-num">4</div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ BUDGET ══ -->
+  <section id="budget" class="page-section dark-section">
+    <div class="section-inner">
+      <div class="section-header scroll-reveal">
+        <p class="eyebrow">💰 Financial Overview</p>
+        <h2 class="section-title">Budget Breakdown</h2>
+        <p class="section-sub">Group of 3 · Shared costs split equally</p>
+      </div>
+
+      <div class="budget-hero scroll-reveal">
+        <div class="budget-hero-card primary">
+          <div class="bh-label">Total Trip Budget</div>
+          <div class="bh-amount">₹31,458</div>
+          <div class="bh-sub">Group of 3 · 9 days · All-inclusive</div>
+        </div>
+        <div class="budget-hero-card accent">
+          <div class="bh-label">Per Person</div>
+          <div class="bh-amount">₹10,486</div>
+          <div class="bh-sub">Trains + Stay + Food + Activities</div>
+        </div>
+        <div class="budget-hero-card tip">
+          <div class="bh-label">💡 Daily Average</div>
+          <div class="bh-amount">₹1,165</div>
+          <div class="bh-sub">Per person, per day</div>
+        </div>
+      </div>
+
+      <div class="budget-main scroll-reveal">
+        <div class="budget-bars" id="budget-bars"></div>
+        <div class="budget-sidebar">
+          <div class="budget-donut-wrap">
+            <canvas id="budget-donut" width="200" height="200"></canvas>
+            <div class="donut-center">
+              <span>₹10,486</span>
+              <small>per person</small>
+            </div>
+          </div>
+          <div class="budget-legend" id="budget-legend"></div>
+          <div class="budget-tips">
+            <p class="tips-title">💡 Pro Tips</p>
+            <ul class="tips-list">
+              <li>Book trains on IRCTC now — June is peak season</li>
+              <li>Gir safari pre-booking at girlion.in is mandatory</li>
+              <li>Carry cash for dharamshalas & local autos</li>
+              <li>Book SoU entry tickets online; bring photo IDs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ GALLERY ══ -->
+  <section id="gallery" class="page-section">
+    <div class="section-inner">
+      <div class="section-header scroll-reveal">
+        <p class="eyebrow">📸 Visual Journey</p>
+        <h2 class="section-title">Photo Memories</h2>
+        <p class="section-sub">Click any image to view in fullscreen</p>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-stats">
+        <div class="footer-stat"><span class="fs-num">9</span><span class="fs-label">Days</span></div>
+        <div class="footer-stat"><span class="fs-num">7</span><span class="fs-label">Destinations</span></div>
+        <div class="footer-stat"><span class="fs-num">13,000+</span><span class="fs-label">Trek Steps</span></div>
+        <div class="footer-stat"><span class="fs-num">4</span><span class="fs-label">Train Rides</span></div>
+        <div class="footer-stat"><span class="fs-num">∞</span><span class="fs-label">Memories</span></div>
+      </div>
+      <p class="footer-quote">From the misty peaks of Girnar to the sacred shores of Somnath — <em>Gujarat, we will return.</em></p>
+      <a href="junagadh.html" class="btn-primary">Relive the Journey →</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
